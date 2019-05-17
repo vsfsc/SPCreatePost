@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="51e2a6e0-339c-4545-b28d-75cdbd8cf42e" solutionId="51e2a6e0-339c-4545-b28d-75cdbd8cf42e" resetWebServer="false" sharePointProductVersion="15.0" name="ShowVANews" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="60b4c57c-6916-4ca2-a399-1d257ea22a7d" />
+  </features>
+</package>

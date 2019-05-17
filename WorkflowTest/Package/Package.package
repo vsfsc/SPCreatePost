@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4d80b0c1-acbf-4dac-88eb-f282df3769eb" solutionId="4d80b0c1-acbf-4dac-88eb-f282df3769eb" resetWebServer="false" sharePointProductVersion="15.0" name="WorkflowTest" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="4913abd7-8296-4064-bbfe-3716de382e22" />
+    <featureReference itemId="bab9cc8a-95b1-4985-83c7-ff835ee1dde7" />
+  </features>
+</package>

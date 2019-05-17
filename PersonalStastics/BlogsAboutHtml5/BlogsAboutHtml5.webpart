@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="PersonalStastics.BlogsAboutHtml5.BlogsAboutHtml5, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">课程相关博客</property>
+        <property name="Description" type="string">课程相关的博客</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

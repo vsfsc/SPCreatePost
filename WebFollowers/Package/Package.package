@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="0b238ac8-c469-4d1e-bb26-cba613a316e2" 
+        solutionId="0b238ac8-c469-4d1e-bb26-cba613a316e2" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="WebFollowers"
+        sharePointProductVersion="15.0">
+</package>

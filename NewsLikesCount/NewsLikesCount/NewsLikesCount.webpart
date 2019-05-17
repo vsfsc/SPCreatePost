@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="NewsLikesCount.NewsLikesCount.NewsLikesCount, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">为新闻点赞</property>
+        <property name="Description" type="string">在通知的显示页面</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

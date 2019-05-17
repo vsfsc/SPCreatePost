@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2a898ebf-209b-4189-b9d9-0146cb02a45d" solutionId="2a898ebf-209b-4189-b9d9-0146cb02a45d" resetWebServer="false" sharePointProductVersion="15.0" name="PersonalStastics" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3c8d66f3-61e3-4ddb-8dcd-77b49bd2d295" />
+  </features>
+</package>

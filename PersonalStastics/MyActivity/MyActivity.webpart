@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="PersonalStastics.MyActivity.MyActivity, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">获取当前用户的所有活动</property>
+        <property name="Description" type="string">当前用户的活动</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

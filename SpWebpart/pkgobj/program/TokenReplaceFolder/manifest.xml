@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="034c540e-c75b-4171-894a-82f6998f71b4" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SpWebpart.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SpWebpart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=238005f3605d9641" Namespace="SpWebpart.ChangeRibbonSelection" TypeName="*" />
+        <SafeControl Assembly="SpWebpart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=238005f3605d9641" Namespace="SpWebpart.WebStatistics" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SpWebpart_ChangeRibbonSelection\Feature.xml" />
+  </FeatureManifests>
+</Solution>

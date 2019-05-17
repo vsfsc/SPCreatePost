@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A9433E1-BF46-4B58-BC0D-C820FBC7C6BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPCreatePost</RootNamespace>
+    <AssemblyName>SPCreatePost</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\inetpub\wwwroot\wss\VirtualDirectories\80\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'program|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\program\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'winform|AnyCPU'">
+    <OutputPath>bin\winform\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\iSmart\DLL\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Microsoft.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Extensions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=69c3241e6f0468ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\dll\Microsoft.IdentityModel.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.Office.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.Office.Server.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.Office.Server.UserProfiles.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.UserProfiles, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.UserProfiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventReceiver1\EventReceiver1.cs" />
+    <Compile Include="Layouts\AppBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\a.aspx.cs" />
+    <Compile Include="Layouts\SPCreatePost\a.aspx.designer.cs">
+      <DependentUpon>a.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\ADTest.aspx.cs">
+      <DependentUpon>ADTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\ADTest.aspx.designer.cs">
+      <DependentUpon>ADTest.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\AppTest.aspx.cs">
+      <DependentUpon>AppTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\AppTest.aspx.designer.cs">
+      <DependentUpon>AppTest.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ReadAssert.aspx.cs">
+      <DependentUpon>ReadAssert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\ReadAssert.aspx.designer.cs">
+      <DependentUpon>ReadAssert.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\CheckUser.aspx.cs">
+      <DependentUpon>CheckUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\Common.cs" />
+    <Compile Include="Layouts\SPCreatePost\CustDownload.aspx.cs">
+      <DependentUpon>CustDownload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\CustDownload.aspx.designer.cs">
+      <DependentUpon>CustDownload.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\CustomLogin.aspx.cs">
+      <DependentUpon>CustomLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\CustomLogin.aspx.designer.cs">
+      <DependentUpon>CustomLogin.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\DataSetHelper.cs" />
+    <Compile Include="Layouts\SPCreatePost\download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\download.aspx.designer.cs">
+      <DependentUpon>download.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\EnumerateAllLists.aspx.cs">
+      <DependentUpon>EnumerateAllLists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\FileUploadShow.aspx.cs">
+      <DependentUpon>FileUploadShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\FileUploadShow.aspx.designer.cs">
+      <DependentUpon>FileUploadShow.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\ImageProcessFactory.cs" />
+    <Compile Include="Layouts\SPCreatePost\LatestBlog.aspx.cs">
+      <DependentUpon>LatestBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\LatestBlog.aspx.designer.cs">
+      <DependentUpon>LatestBlog.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\login.aspx.designer.cs">
+      <DependentUpon>login.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\MediaPlayer.aspx.cs">
+      <DependentUpon>MediaPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\MediaPlayer.aspx.designer.cs">
+      <DependentUpon>MediaPlayer.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\MyNewsfeed.aspx.cs">
+      <DependentUpon>MyNewsfeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\MyNewsfeed.aspx.designer.cs">
+      <DependentUpon>MyNewsfeed.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\NewCheckUser.aspx.cs">
+      <DependentUpon>NewCheckUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\NewCheckUser.aspx.designer.cs">
+      <DependentUpon>NewCheckUser.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\PersonalPosts.aspx.cs">
+      <DependentUpon>PersonalPosts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\PersonalPosts.aspx.designer.cs">
+      <DependentUpon>PersonalPosts.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\PostsSearch.aspx.cs">
+      <DependentUpon>PostsSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\PostsSearch.aspx.designer.cs">
+      <DependentUpon>PostsSearch.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\PreviewImage.ashx.cs">
+      <DependentUpon>PreviewImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\refresh.aspx.cs">
+      <DependentUpon>refresh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\refresh.aspx.designer.cs">
+      <DependentUpon>refresh.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\scroll.aspx.cs">
+      <DependentUpon>scroll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\scroll.aspx.designer.cs">
+      <DependentUpon>scroll.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\SharePost.aspx.cs">
+      <DependentUpon>SharePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\SharePost.aspx.designer.cs">
+      <DependentUpon>SharePost.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\SocialFeed.aspx.cs">
+      <DependentUpon>SocialFeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\SocialFeed.aspx.designer.cs">
+      <DependentUpon>SocialFeed.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\SwitchMedia.aspx.cs">
+      <DependentUpon>SwitchMedia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\SwitchMedia.aspx.designer.cs">
+      <DependentUpon>SwitchMedia.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\testDateControl.aspx.cs">
+      <DependentUpon>testDateControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\testDateControl.aspx.designer.cs">
+      <DependentUpon>testDateControl.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPCreatePost\WebCustomControl1.cs" />
+    <Compile Include="Layouts\SPMooc\AjaxRefresh.aspx.cs">
+      <DependentUpon>AjaxRefresh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPMooc\AjaxRefresh.aspx.designer.cs">
+      <DependentUpon>AjaxRefresh.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SPMooc\Score.aspx.cs">
+      <DependentUpon>Score.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SPMooc\Score.aspx.designer.cs">
+      <DependentUpon>Score.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TokenHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EventReceiver1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{414c1e32-c327-481f-9334-a34f53cbc7dc}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{ebe2ce09-89d2-427d-a369-3dfbd1fa4d26}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{92733b74-f430-4061-8407-62417990a16a}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\SPCreatePost\PreviewImage.ashx" />
+    <None Include="Package\Package.package">
+      <PackageId>{e1c923be-c0e7-4821-9129-b4da60337f3e}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EventReceiver1\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\ReadAssert.aspx" />
+    <Content Include="Layouts\SPCreatePost\a.aspx" />
+    <Content Include="Layouts\SPCreatePost\ADTest.aspx" />
+    <Content Include="Layouts\SPCreatePost\CheckUser.aspx" />
+    <Content Include="Layouts\SPCreatePost\CustDownload.aspx" />
+    <Content Include="Layouts\SPCreatePost\CustomLogin.aspx" />
+    <Content Include="Layouts\SPCreatePost\download.aspx" />
+    <Content Include="Layouts\SPCreatePost\EnumerateAllLists.aspx" />
+    <Content Include="Layouts\SPCreatePost\Error.aspx" />
+    <Content Include="Layouts\SPCreatePost\FileUploadShow.aspx" />
+    <Content Include="Layouts\SPCreatePost\JavaScript1.js" />
+    <Content Include="Layouts\SPCreatePost\jquery-1.4.1.js" />
+    <Content Include="Layouts\SPCreatePost\LatestBlog.aspx" />
+    <Content Include="Layouts\SPCreatePost\login.aspx" />
+    <Content Include="Layouts\SPCreatePost\MediaPlayer.aspx" />
+    <Content Include="Layouts\SPCreatePost\MyNewsfeed.aspx" />
+    <Content Include="Layouts\SPCreatePost\NewCheckUser.aspx" />
+    <Content Include="Layouts\SPCreatePost\PersonalPosts.aspx" />
+    <Content Include="Layouts\SPCreatePost\refresh.aspx" />
+    <Content Include="Layouts\SPCreatePost\scroll.aspx" />
+    <Content Include="Layouts\SPCreatePost\shipin.jpg" />
+    <Content Include="Layouts\SPCreatePost\SocialFeed.aspx" />
+    <Content Include="Layouts\SPCreatePost\SwitchMedia.aspx" />
+    <Content Include="Layouts\SPCreatePost\test.aspx" />
+    <Content Include="Layouts\SPCreatePost\testDateControl.aspx" />
+    <Content Include="Layouts\SPCreatePost\viewlsts.aspx" />
+    <Content Include="Layouts\SPMooc\AjaxRefresh.aspx" />
+    <Content Include="Layouts\SPMooc\css\keyboard.css" />
+    <Content Include="Layouts\SPMooc\css\keyboard.js" />
+    <Content Include="Layouts\SPCreatePost\AppTest.aspx" />
+    <Content Include="Layouts\SPCreatePost\ChangePassword.aspx" />
+    <Content Include="Layouts\SPCreatePost\PostsSearch.aspx" />
+    <Content Include="Layouts\SPCreatePost\SharePost.aspx" />
+    <Content Include="Layouts\SPMooc\Score.aspx" />
+    <Content Include="Layouts\SPMooc\Validate.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SPCreatePostDLL\SPCreatePostDLL.csproj">
+      <Project>{5d54b41b-dc2b-4631-9cec-684c312111d8}</Project>
+      <Name>SPCreatePostDLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

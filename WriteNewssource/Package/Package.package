@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="25c69859-808c-4e9d-92e3-7cc2693f1969" solutionId="25c69859-808c-4e9d-92e3-7cc2693f1969" resetWebServer="false" sharePointProductVersion="15.0" name="WriteNewssource" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="254922ef-a98a-4062-8a53-f6f7c6d9aeb2" />
+  </features>
+</package>

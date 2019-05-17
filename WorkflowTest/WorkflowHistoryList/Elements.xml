@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance FeatureId="{00bfea71-4ea5-48d4-a4ad-305cf7030140}"
+              TemplateType="140"
+              Title="WorkflowHistoryList"
+              Description="此列表实例用于工作流历史记录项。"
+              Url="Lists/WorkflowHistoryList"
+              RootWebOnly="FALSE" />
+</Elements>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b4c2d85a-ab2f-489c-80f5-eb11b58a8fb0" solutionId="b4c2d85a-ab2f-489c-80f5-eb11b58a8fb0" resetWebServer="false" sharePointProductVersion="15.0" name="StudentList" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e4ce1768-421a-479a-9542-531a4245f747" />
+    <featureReference itemId="c26e99fd-890b-4972-b10e-82b51da8a618" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="126362ba-e073-4dfe-9b6f-15b0fba6449b" />
+  </projectItems>
+</package>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">SPLegalAmountField</Field>
+    <Field Name="TypeDisplayName">小写金额转大写</Field>
+
+    <Field Name="TypeShortDescription">小写金额转成大写</Field>
+    <Field Name="ParentType">MultiColumn</Field>
+
+    <Field Name="FieldTypeClass">SPLegalAmountField.SPLegalAmountField, $SharePoint.Project.AssemblyFullName$</Field>
+
+    <Field Name="UserCreatable">TRUE</Field>
+    <Field Name="ShowOnListCreate">TRUE</Field>
+    <Field Name="ShowOnDocumentLibraryCreate">TRUE</Field>
+    <Field Name="ShowOnSurveyCreate">TRUE</Field>
+    <Field Name="ShowOnColumnTemplateCreate">TRUE</Field>
+    <Field Name="Sortable">TRUE</Field>
+    <Field Name="Filterable">TRUE</Field>
+
+    <PropertySchema>
+      <Fields>
+        <Field Name="SPLegalAmountFieldRelevanceListField" Type="Text" Hidden="TRUE" />
+        <Field Name="SPLegalAmountFieldTextboxWidth" Type="Text" Hidden="TRUE" />
+       
+      </Fields>
+    </PropertySchema>
+    <Field Name="FieldEditorUserControl">/_controltemplates/15/SPLegalAmountFieldEditor.ascx</Field>
+  </FieldType>
+</FieldTypes>

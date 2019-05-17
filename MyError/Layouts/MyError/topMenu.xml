@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<menu>
+  <menuItem url="~/Default.aspx" title="简介"  description=""/>
+  <menuItem url="~/News.aspx" title="新闻"  description="">
+    <menuItem url="~/News.aspx" title="国内新闻"  description=""/>
+    <menuItem url="~/News.aspx" title="国际新闻"  description="">
+      <menuItem url="~/News.aspx" title="亚洲新闻"  description=""/>
+      <menuItem url="~/News.aspx" title="欧洲新闻"  description=""/>
+    </menuItem>     
+  </menuItem>
+</menu>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c7a876a3-d468-4c4d-bb9f-4c19773b8235" solutionId="c7a876a3-d468-4c4d-bb9f-4c19773b8235" resetWebServer="false" sharePointProductVersion="15.0" name="ItemViewCounterField" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="27183865-8e7e-4d12-9eee-b3ebc73a598c" />
+  </projectItems>
+</package>

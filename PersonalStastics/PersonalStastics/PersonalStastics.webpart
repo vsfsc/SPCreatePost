@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="PersonalStastics.PersonalStastics.PersonalStastics, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">关注的和发布的数据</property>
+        <property name="Description" type="string">统计当前用户的数据</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a01a8a6f-78d7-487b-9a73-9e6357ff13d3" solutionId="a01a8a6f-78d7-487b-9a73-9e6357ff13d3" resetWebServer="false" sharePointProductVersion="15.0" name="NewsLikesCount" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="15446c80-6d7d-4ed2-b829-f63184765acb" />
+  </features>
+</package>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="e1c923be-c0e7-4821-9129-b4da60337f3e" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SPCreatePost.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SPCreatePost\PreviewImage.ashx" />
+    <TemplateFile Location="Layouts\ReadAssert.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\ADTest.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\CheckUser.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\CustDownload.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\download.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\EnumerateAllLists.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\Error.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\FileUploadShow.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\JavaScript1.js" />
+    <TemplateFile Location="Layouts\SPCreatePost\LatestBlog.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\MediaPlayer.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\MyNewsfeed.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\NewCheckUser.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\PersonalPosts.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\scroll.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\shipin.jpg" />
+    <TemplateFile Location="Layouts\SPCreatePost\SocialFeed.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\SwitchMedia.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\test.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\testDateControl.aspx" />
+    <TemplateFile Location="Layouts\SPMooc\AjaxRefresh.aspx" />
+    <TemplateFile Location="Layouts\SPMooc\css\keyboard.css" />
+    <TemplateFile Location="Layouts\SPMooc\css\keyboard.js" />
+    <TemplateFile Location="Layouts\SPCreatePost\AppTest.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\ChangePassword.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\PostsSearch.aspx" />
+    <TemplateFile Location="Layouts\SPCreatePost\SharePost.aspx" />
+    <TemplateFile Location="Layouts\SPMooc\Score.aspx" />
+    <TemplateFile Location="Layouts\SPMooc\Validate.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SPCreatePost_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

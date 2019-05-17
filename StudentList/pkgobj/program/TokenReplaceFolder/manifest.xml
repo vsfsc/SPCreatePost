@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="b4c2d85a-ab2f-489c-80f5-eb11b58a8fb0" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="StudentList.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\StudentList\StudentList.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="StudentList_StudentList\Feature.xml" />
+  </FeatureManifests>
+</Solution>

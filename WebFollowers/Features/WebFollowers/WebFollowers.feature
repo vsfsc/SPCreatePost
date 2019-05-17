@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="befb4b4f-fd7b-475d-80f0-aed707e50412" featureId="befb4b4f-fd7b-475d-80f0-aed707e50412" imageUrl="" solutionId="00000000-0000-0000-0000-000000000000" title="WebFollowers" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel" />

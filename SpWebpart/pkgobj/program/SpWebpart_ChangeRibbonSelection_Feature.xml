@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="更改通知的robbin默认选项卡" Id="0a1eb453-62bd-4c67-8f36-ffc920158f15" Scope="Site" Title="SpWebpart Feature1">
+  <ElementManifests>
+    <ElementManifest Location="ChangeRibbonSelection\Elements.xml" />
+    <ElementFile Location="ChangeRibbonSelection\ChangeRibbonSelection.webpart" />
+    <ElementManifest Location="WebStatistics\Elements.xml" />
+    <ElementFile Location="WebStatistics\WebStatistics.webpart" />
+  </ElementManifests>
+</Feature>

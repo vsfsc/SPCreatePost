@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="95e73145-b3c5-465b-ba35-87deb56e9a27" solutionId="95e73145-b3c5-465b-ba35-87deb56e9a27" resetWebServer="false" sharePointProductVersion="15.0" name="ListEventHandler" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="47c97a6b-3da3-4443-a465-cd406ed7ef11" />
+  </features>
+</package>

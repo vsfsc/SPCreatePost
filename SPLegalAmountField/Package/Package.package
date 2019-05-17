@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="eef3f214-4e5d-4348-a4df-4df36ec789ee" solutionId="eef3f214-4e5d-4348-a4df-4df36ec789ee" resetWebServer="false" sharePointProductVersion="15.0" name="SPLegalAmountField" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="a2c9d86f-81fa-4b65-aa28-22c49cab8632" />
+    <projectItemReference itemId="b2d0d0d6-1c45-4f25-a952-b9938f1fe97e" />
+  </projectItems>
+</package>

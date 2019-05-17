@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e1c923be-c0e7-4821-9129-b4da60337f3e" solutionId="e1c923be-c0e7-4821-9129-b4da60337f3e" resetWebServer="false" sharePointProductVersion="15.0" name="SPCreatePost" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ebe2ce09-89d2-427d-a369-3dfbd1fa4d26" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="92733b74-f430-4061-8407-62417990a16a" />
+  </projectItems>
+</package>
